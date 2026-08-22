@@ -1,0 +1,20 @@
+name: hyperparameter-selection
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - sympy
+  - cython
+  - tqdm
+  - ipython
+  - ipywidgets
+  - jupyterlab
+  - notebook
+  - pytorch
+  - cpuonly

@@ -1,0 +1,1296 @@
+.
+├── .venv
+│   ├── bin
+│   │   ├── activate
+│   │   ├── activate.csh
+│   │   ├── activate.fish
+│   │   ├── Activate.ps1
+│   │   ├── pip
+│   │   ├── pip3
+│   │   ├── pip3.9
+│   │   ├── python
+│   │   ├── python3
+│   │   └── python3.9
+│   ├── include
+│   ├── lib
+│   │   └── python3.9
+│   │       └── site-packages
+│   │           ├── _distutils_hack
+│   │           │   ├── __init__.py
+│   │           │   └── override.py
+│   │           ├── pip
+│   │           │   ├── _internal
+│   │           │   │   ├── cli
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── autocompletion.py
+│   │           │   │   │   ├── base_command.py
+│   │           │   │   │   ├── cmdoptions.py
+│   │           │   │   │   ├── command_context.py
+│   │           │   │   │   ├── index_command.py
+│   │           │   │   │   ├── main.py
+│   │           │   │   │   ├── main_parser.py
+│   │           │   │   │   ├── parser.py
+│   │           │   │   │   ├── progress_bars.py
+│   │           │   │   │   ├── req_command.py
+│   │           │   │   │   ├── spinners.py
+│   │           │   │   │   └── status_codes.py
+│   │           │   │   ├── commands
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── cache.py
+│   │           │   │   │   ├── check.py
+│   │           │   │   │   ├── completion.py
+│   │           │   │   │   ├── configuration.py
+│   │           │   │   │   ├── debug.py
+│   │           │   │   │   ├── download.py
+│   │           │   │   │   ├── freeze.py
+│   │           │   │   │   ├── hash.py
+│   │           │   │   │   ├── help.py
+│   │           │   │   │   ├── index.py
+│   │           │   │   │   ├── inspect.py
+│   │           │   │   │   ├── install.py
+│   │           │   │   │   ├── list.py
+│   │           │   │   │   ├── lock.py
+│   │           │   │   │   ├── search.py
+│   │           │   │   │   ├── show.py
+│   │           │   │   │   ├── uninstall.py
+│   │           │   │   │   └── wheel.py
+│   │           │   │   ├── distributions
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── base.py
+│   │           │   │   │   ├── installed.py
+│   │           │   │   │   ├── sdist.py
+│   │           │   │   │   └── wheel.py
+│   │           │   │   ├── index
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── collector.py
+│   │           │   │   │   ├── package_finder.py
+│   │           │   │   │   └── sources.py
+│   │           │   │   ├── locations
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _distutils.py
+│   │           │   │   │   ├── _sysconfig.py
+│   │           │   │   │   └── base.py
+│   │           │   │   ├── metadata
+│   │           │   │   │   ├── importlib
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _json.py
+│   │           │   │   │   ├── base.py
+│   │           │   │   │   └── pkg_resources.py
+│   │           │   │   ├── models
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── candidate.py
+│   │           │   │   │   ├── direct_url.py
+│   │           │   │   │   ├── format_control.py
+│   │           │   │   │   ├── index.py
+│   │           │   │   │   ├── installation_report.py
+│   │           │   │   │   ├── link.py
+│   │           │   │   │   ├── release_control.py
+│   │           │   │   │   ├── scheme.py
+│   │           │   │   │   ├── search_scope.py
+│   │           │   │   │   ├── selection_prefs.py
+│   │           │   │   │   ├── target_python.py
+│   │           │   │   │   └── wheel.py
+│   │           │   │   ├── network
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── auth.py
+│   │           │   │   │   ├── cache.py
+│   │           │   │   │   ├── download.py
+│   │           │   │   │   ├── lazy_wheel.py
+│   │           │   │   │   ├── session.py
+│   │           │   │   │   ├── utils.py
+│   │           │   │   │   └── xmlrpc.py
+│   │           │   │   ├── operations
+│   │           │   │   │   ├── build
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── install
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── check.py
+│   │           │   │   │   ├── freeze.py
+│   │           │   │   │   └── prepare.py
+│   │           │   │   ├── req
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── constructors.py
+│   │           │   │   │   ├── pep723.py
+│   │           │   │   │   ├── req_dependency_group.py
+│   │           │   │   │   ├── req_file.py
+│   │           │   │   │   ├── req_install.py
+│   │           │   │   │   ├── req_set.py
+│   │           │   │   │   └── req_uninstall.py
+│   │           │   │   ├── resolution
+│   │           │   │   │   ├── legacy
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── resolvelib
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   └── base.py
+│   │           │   │   ├── utils
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _jaraco_text.py
+│   │           │   │   │   ├── _log.py
+│   │           │   │   │   ├── appdirs.py
+│   │           │   │   │   ├── compat.py
+│   │           │   │   │   ├── compatibility_tags.py
+│   │           │   │   │   ├── datetime.py
+│   │           │   │   │   ├── deprecation.py
+│   │           │   │   │   ├── direct_url_helpers.py
+│   │           │   │   │   ├── egg_link.py
+│   │           │   │   │   ├── entrypoints.py
+│   │           │   │   │   ├── filesystem.py
+│   │           │   │   │   ├── filetypes.py
+│   │           │   │   │   ├── glibc.py
+│   │           │   │   │   ├── hashes.py
+│   │           │   │   │   ├── logging.py
+│   │           │   │   │   ├── misc.py
+│   │           │   │   │   ├── packaging.py
+│   │           │   │   │   ├── pylock.py
+│   │           │   │   │   ├── retry.py
+│   │           │   │   │   ├── subprocess.py
+│   │           │   │   │   ├── temp_dir.py
+│   │           │   │   │   ├── unpacking.py
+│   │           │   │   │   ├── urls.py
+│   │           │   │   │   ├── virtualenv.py
+│   │           │   │   │   └── wheel.py
+│   │           │   │   ├── vcs
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── bazaar.py
+│   │           │   │   │   ├── git.py
+│   │           │   │   │   ├── mercurial.py
+│   │           │   │   │   ├── subversion.py
+│   │           │   │   │   └── versioncontrol.py
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── build_env.py
+│   │           │   │   ├── cache.py
+│   │           │   │   ├── configuration.py
+│   │           │   │   ├── exceptions.py
+│   │           │   │   ├── main.py
+│   │           │   │   ├── pyproject.py
+│   │           │   │   ├── self_outdated_check.py
+│   │           │   │   └── wheel_builder.py
+│   │           │   ├── _vendor
+│   │           │   │   ├── cachecontrol
+│   │           │   │   │   ├── caches
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _cmd.py
+│   │           │   │   │   ├── adapter.py
+│   │           │   │   │   ├── cache.py
+│   │           │   │   │   ├── controller.py
+│   │           │   │   │   ├── filewrapper.py
+│   │           │   │   │   ├── heuristics.py
+│   │           │   │   │   ├── LICENSE.txt
+│   │           │   │   │   ├── py.typed
+│   │           │   │   │   ├── serialize.py
+│   │           │   │   │   └── wrapper.py
+│   │           │   │   ├── certifi
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   ├── cacert.pem
+│   │           │   │   │   ├── core.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   └── py.typed
+│   │           │   │   ├── dependency_groups
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   ├── _implementation.py
+│   │           │   │   │   ├── _lint_dependency_groups.py
+│   │           │   │   │   ├── _pip_wrapper.py
+│   │           │   │   │   ├── _toml_compat.py
+│   │           │   │   │   ├── LICENSE.txt
+│   │           │   │   │   └── py.typed
+│   │           │   │   ├── distlib
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── compat.py
+│   │           │   │   │   ├── LICENSE.txt
+│   │           │   │   │   ├── resources.py
+│   │           │   │   │   ├── scripts.py
+│   │           │   │   │   ├── t32.exe
+│   │           │   │   │   ├── t64-arm.exe
+│   │           │   │   │   ├── t64.exe
+│   │           │   │   │   ├── util.py
+│   │           │   │   │   ├── w32.exe
+│   │           │   │   │   ├── w64-arm.exe
+│   │           │   │   │   └── w64.exe
+│   │           │   │   ├── distro
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   ├── distro.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   └── py.typed
+│   │           │   │   ├── idna
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── codec.py
+│   │           │   │   │   ├── compat.py
+│   │           │   │   │   ├── core.py
+│   │           │   │   │   ├── idnadata.py
+│   │           │   │   │   ├── intranges.py
+│   │           │   │   │   ├── LICENSE.md
+│   │           │   │   │   ├── package_data.py
+│   │           │   │   │   ├── py.typed
+│   │           │   │   │   └── uts46data.py
+│   │           │   │   ├── msgpack
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── COPYING
+│   │           │   │   │   ├── exceptions.py
+│   │           │   │   │   ├── ext.py
+│   │           │   │   │   └── fallback.py
+│   │           │   │   ├── packaging
+│   │           │   │   │   ├── licenses
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _elffile.py
+│   │           │   │   │   ├── _manylinux.py
+│   │           │   │   │   ├── _musllinux.py
+│   │           │   │   │   ├── _parser.py
+│   │           │   │   │   ├── _structures.py
+│   │           │   │   │   ├── _tokenizer.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   ├── LICENSE.APACHE
+│   │           │   │   │   ├── LICENSE.BSD
+│   │           │   │   │   ├── markers.py
+│   │           │   │   │   ├── metadata.py
+│   │           │   │   │   ├── py.typed
+│   │           │   │   │   ├── pylock.py
+│   │           │   │   │   ├── requirements.py
+│   │           │   │   │   ├── specifiers.py
+│   │           │   │   │   ├── tags.py
+│   │           │   │   │   ├── utils.py
+│   │           │   │   │   └── version.py
+│   │           │   │   ├── pkg_resources
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   └── LICENSE
+│   │           │   │   ├── platformdirs
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   ├── android.py
+│   │           │   │   │   ├── api.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   ├── macos.py
+│   │           │   │   │   ├── py.typed
+│   │           │   │   │   ├── unix.py
+│   │           │   │   │   ├── version.py
+│   │           │   │   │   └── windows.py
+│   │           │   │   ├── pygments
+│   │           │   │   │   ├── filters
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── formatters
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── lexers
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── styles
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   ├── console.py
+│   │           │   │   │   ├── filter.py
+│   │           │   │   │   ├── formatter.py
+│   │           │   │   │   ├── lexer.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   ├── modeline.py
+│   │           │   │   │   ├── plugin.py
+│   │           │   │   │   ├── regexopt.py
+│   │           │   │   │   ├── scanner.py
+│   │           │   │   │   ├── sphinxext.py
+│   │           │   │   │   ├── style.py
+│   │           │   │   │   ├── token.py
+│   │           │   │   │   ├── unistring.py
+│   │           │   │   │   └── util.py
+│   │           │   │   ├── pyproject_hooks
+│   │           │   │   │   ├── _in_process
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _impl.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   └── py.typed
+│   │           │   │   ├── requests
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __version__.py
+│   │           │   │   │   ├── _internal_utils.py
+│   │           │   │   │   ├── adapters.py
+│   │           │   │   │   ├── api.py
+│   │           │   │   │   ├── auth.py
+│   │           │   │   │   ├── certs.py
+│   │           │   │   │   ├── compat.py
+│   │           │   │   │   ├── cookies.py
+│   │           │   │   │   ├── exceptions.py
+│   │           │   │   │   ├── help.py
+│   │           │   │   │   ├── hooks.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   ├── models.py
+│   │           │   │   │   ├── packages.py
+│   │           │   │   │   ├── sessions.py
+│   │           │   │   │   ├── status_codes.py
+│   │           │   │   │   ├── structures.py
+│   │           │   │   │   └── utils.py
+│   │           │   │   ├── resolvelib
+│   │           │   │   │   ├── resolvers
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   ├── providers.py
+│   │           │   │   │   ├── py.typed
+│   │           │   │   │   ├── reporters.py
+│   │           │   │   │   └── structs.py
+│   │           │   │   ├── rich
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   ├── _cell_widths.py
+│   │           │   │   │   ├── _emoji_codes.py
+│   │           │   │   │   ├── _emoji_replace.py
+│   │           │   │   │   ├── _export_format.py
+│   │           │   │   │   ├── _extension.py
+│   │           │   │   │   ├── _fileno.py
+│   │           │   │   │   ├── _inspect.py
+│   │           │   │   │   ├── _log_render.py
+│   │           │   │   │   ├── _loop.py
+│   │           │   │   │   ├── _null_file.py
+│   │           │   │   │   ├── _palettes.py
+│   │           │   │   │   ├── _pick.py
+│   │           │   │   │   ├── _ratio.py
+│   │           │   │   │   ├── _spinners.py
+│   │           │   │   │   ├── _stack.py
+│   │           │   │   │   ├── _timer.py
+│   │           │   │   │   ├── _win32_console.py
+│   │           │   │   │   ├── _windows.py
+│   │           │   │   │   ├── _windows_renderer.py
+│   │           │   │   │   ├── _wrap.py
+│   │           │   │   │   ├── abc.py
+│   │           │   │   │   ├── align.py
+│   │           │   │   │   ├── ansi.py
+│   │           │   │   │   ├── bar.py
+│   │           │   │   │   ├── box.py
+│   │           │   │   │   ├── cells.py
+│   │           │   │   │   ├── color.py
+│   │           │   │   │   ├── color_triplet.py
+│   │           │   │   │   ├── columns.py
+│   │           │   │   │   ├── console.py
+│   │           │   │   │   ├── constrain.py
+│   │           │   │   │   ├── containers.py
+│   │           │   │   │   ├── control.py
+│   │           │   │   │   ├── default_styles.py
+│   │           │   │   │   ├── diagnose.py
+│   │           │   │   │   ├── emoji.py
+│   │           │   │   │   ├── errors.py
+│   │           │   │   │   ├── file_proxy.py
+│   │           │   │   │   ├── filesize.py
+│   │           │   │   │   ├── highlighter.py
+│   │           │   │   │   ├── json.py
+│   │           │   │   │   ├── jupyter.py
+│   │           │   │   │   ├── layout.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   ├── live.py
+│   │           │   │   │   ├── live_render.py
+│   │           │   │   │   ├── logging.py
+│   │           │   │   │   ├── markup.py
+│   │           │   │   │   ├── measure.py
+│   │           │   │   │   ├── padding.py
+│   │           │   │   │   ├── pager.py
+│   │           │   │   │   ├── palette.py
+│   │           │   │   │   ├── panel.py
+│   │           │   │   │   ├── pretty.py
+│   │           │   │   │   ├── progress.py
+│   │           │   │   │   ├── progress_bar.py
+│   │           │   │   │   ├── prompt.py
+│   │           │   │   │   ├── protocol.py
+│   │           │   │   │   ├── py.typed
+│   │           │   │   │   ├── region.py
+│   │           │   │   │   ├── repr.py
+│   │           │   │   │   ├── rule.py
+│   │           │   │   │   ├── scope.py
+│   │           │   │   │   ├── screen.py
+│   │           │   │   │   ├── segment.py
+│   │           │   │   │   ├── spinner.py
+│   │           │   │   │   ├── status.py
+│   │           │   │   │   ├── style.py
+│   │           │   │   │   ├── styled.py
+│   │           │   │   │   ├── syntax.py
+│   │           │   │   │   ├── table.py
+│   │           │   │   │   ├── terminal_theme.py
+│   │           │   │   │   ├── text.py
+│   │           │   │   │   ├── theme.py
+│   │           │   │   │   ├── themes.py
+│   │           │   │   │   ├── traceback.py
+│   │           │   │   │   └── tree.py
+│   │           │   │   ├── tomli
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _parser.py
+│   │           │   │   │   ├── _re.py
+│   │           │   │   │   ├── _types.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   └── py.typed
+│   │           │   │   ├── tomli_w
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _writer.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   └── py.typed
+│   │           │   │   ├── truststore
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _api.py
+│   │           │   │   │   ├── _macos.py
+│   │           │   │   │   ├── _openssl.py
+│   │           │   │   │   ├── _ssl_constants.py
+│   │           │   │   │   ├── _windows.py
+│   │           │   │   │   ├── LICENSE
+│   │           │   │   │   └── py.typed
+│   │           │   │   ├── urllib3
+│   │           │   │   │   ├── contrib
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── packages
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── util
+│   │           │   │   │   │   ...
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _collections.py
+│   │           │   │   │   ├── _version.py
+│   │           │   │   │   ├── connection.py
+│   │           │   │   │   ├── connectionpool.py
+│   │           │   │   │   ├── exceptions.py
+│   │           │   │   │   ├── fields.py
+│   │           │   │   │   ├── filepost.py
+│   │           │   │   │   ├── LICENSE.txt
+│   │           │   │   │   ├── poolmanager.py
+│   │           │   │   │   ├── request.py
+│   │           │   │   │   └── response.py
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── README.rst
+│   │           │   │   └── vendor.txt
+│   │           │   ├── __init__.py
+│   │           │   ├── __main__.py
+│   │           │   ├── __pip-runner__.py
+│   │           │   └── py.typed
+│   │           ├── pip-26.0.1.dist-info
+│   │           │   ├── licenses
+│   │           │   │   ├── src
+│   │           │   │   │   └── pip
+│   │           │   │   │       ...
+│   │           │   │   ├── AUTHORS.txt
+│   │           │   │   └── LICENSE.txt
+│   │           │   ├── entry_points.txt
+│   │           │   ├── INSTALLER
+│   │           │   ├── METADATA
+│   │           │   ├── RECORD
+│   │           │   ├── REQUESTED
+│   │           │   └── WHEEL
+│   │           ├── pkg_resources
+│   │           │   ├── _vendor
+│   │           │   │   ├── packaging
+│   │           │   │   │   ├── __about__.py
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _compat.py
+│   │           │   │   │   ├── _structures.py
+│   │           │   │   │   ├── _typing.py
+│   │           │   │   │   ├── markers.py
+│   │           │   │   │   ├── requirements.py
+│   │           │   │   │   ├── specifiers.py
+│   │           │   │   │   ├── tags.py
+│   │           │   │   │   ├── utils.py
+│   │           │   │   │   └── version.py
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── appdirs.py
+│   │           │   │   └── pyparsing.py
+│   │           │   ├── extern
+│   │           │   │   └── __init__.py
+│   │           │   ├── tests
+│   │           │   │   └── data
+│   │           │   │       └── my-test-package-source
+│   │           │   │           ...
+│   │           │   └── __init__.py
+│   │           ├── setuptools
+│   │           │   ├── _distutils
+│   │           │   │   ├── command
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── bdist.py
+│   │           │   │   │   ├── bdist_dumb.py
+│   │           │   │   │   ├── bdist_msi.py
+│   │           │   │   │   ├── bdist_rpm.py
+│   │           │   │   │   ├── bdist_wininst.py
+│   │           │   │   │   ├── build.py
+│   │           │   │   │   ├── build_clib.py
+│   │           │   │   │   ├── build_ext.py
+│   │           │   │   │   ├── build_py.py
+│   │           │   │   │   ├── build_scripts.py
+│   │           │   │   │   ├── check.py
+│   │           │   │   │   ├── clean.py
+│   │           │   │   │   ├── config.py
+│   │           │   │   │   ├── install.py
+│   │           │   │   │   ├── install_data.py
+│   │           │   │   │   ├── install_egg_info.py
+│   │           │   │   │   ├── install_headers.py
+│   │           │   │   │   ├── install_lib.py
+│   │           │   │   │   ├── install_scripts.py
+│   │           │   │   │   ├── py37compat.py
+│   │           │   │   │   ├── register.py
+│   │           │   │   │   ├── sdist.py
+│   │           │   │   │   └── upload.py
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── _msvccompiler.py
+│   │           │   │   ├── archive_util.py
+│   │           │   │   ├── bcppcompiler.py
+│   │           │   │   ├── ccompiler.py
+│   │           │   │   ├── cmd.py
+│   │           │   │   ├── config.py
+│   │           │   │   ├── core.py
+│   │           │   │   ├── cygwinccompiler.py
+│   │           │   │   ├── debug.py
+│   │           │   │   ├── dep_util.py
+│   │           │   │   ├── dir_util.py
+│   │           │   │   ├── dist.py
+│   │           │   │   ├── errors.py
+│   │           │   │   ├── extension.py
+│   │           │   │   ├── fancy_getopt.py
+│   │           │   │   ├── file_util.py
+│   │           │   │   ├── filelist.py
+│   │           │   │   ├── log.py
+│   │           │   │   ├── msvc9compiler.py
+│   │           │   │   ├── msvccompiler.py
+│   │           │   │   ├── py35compat.py
+│   │           │   │   ├── py38compat.py
+│   │           │   │   ├── spawn.py
+│   │           │   │   ├── sysconfig.py
+│   │           │   │   ├── text_file.py
+│   │           │   │   ├── unixccompiler.py
+│   │           │   │   ├── util.py
+│   │           │   │   ├── version.py
+│   │           │   │   └── versionpredicate.py
+│   │           │   ├── _vendor
+│   │           │   │   ├── more_itertools
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── more.py
+│   │           │   │   │   └── recipes.py
+│   │           │   │   ├── packaging
+│   │           │   │   │   ├── __about__.py
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _compat.py
+│   │           │   │   │   ├── _structures.py
+│   │           │   │   │   ├── _typing.py
+│   │           │   │   │   ├── markers.py
+│   │           │   │   │   ├── requirements.py
+│   │           │   │   │   ├── specifiers.py
+│   │           │   │   │   ├── tags.py
+│   │           │   │   │   ├── utils.py
+│   │           │   │   │   └── version.py
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── ordered_set.py
+│   │           │   │   └── pyparsing.py
+│   │           │   ├── command
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── alias.py
+│   │           │   │   ├── bdist_egg.py
+│   │           │   │   ├── bdist_rpm.py
+│   │           │   │   ├── build_clib.py
+│   │           │   │   ├── build_ext.py
+│   │           │   │   ├── build_py.py
+│   │           │   │   ├── develop.py
+│   │           │   │   ├── dist_info.py
+│   │           │   │   ├── easy_install.py
+│   │           │   │   ├── egg_info.py
+│   │           │   │   ├── install.py
+│   │           │   │   ├── install_egg_info.py
+│   │           │   │   ├── install_lib.py
+│   │           │   │   ├── install_scripts.py
+│   │           │   │   ├── launcher manifest.xml
+│   │           │   │   ├── py36compat.py
+│   │           │   │   ├── register.py
+│   │           │   │   ├── rotate.py
+│   │           │   │   ├── saveopts.py
+│   │           │   │   ├── sdist.py
+│   │           │   │   ├── setopt.py
+│   │           │   │   ├── test.py
+│   │           │   │   ├── upload.py
+│   │           │   │   └── upload_docs.py
+│   │           │   ├── extern
+│   │           │   │   └── __init__.py
+│   │           │   ├── __init__.py
+│   │           │   ├── _deprecation_warning.py
+│   │           │   ├── _imp.py
+│   │           │   ├── archive_util.py
+│   │           │   ├── build_meta.py
+│   │           │   ├── cli-32.exe
+│   │           │   ├── cli-64.exe
+│   │           │   ├── cli.exe
+│   │           │   ├── config.py
+│   │           │   ├── dep_util.py
+│   │           │   ├── depends.py
+│   │           │   ├── dist.py
+│   │           │   ├── errors.py
+│   │           │   ├── extension.py
+│   │           │   ├── glob.py
+│   │           │   ├── gui-32.exe
+│   │           │   ├── gui-64.exe
+│   │           │   ├── gui.exe
+│   │           │   ├── installer.py
+│   │           │   ├── launch.py
+│   │           │   ├── monkey.py
+│   │           │   ├── msvc.py
+│   │           │   ├── namespaces.py
+│   │           │   ├── package_index.py
+│   │           │   ├── py34compat.py
+│   │           │   ├── sandbox.py
+│   │           │   ├── script (dev).tmpl
+│   │           │   ├── script.tmpl
+│   │           │   ├── unicode_utils.py
+│   │           │   ├── version.py
+│   │           │   ├── wheel.py
+│   │           │   └── windows_support.py
+│   │           ├── setuptools-58.0.4.dist-info
+│   │           │   ├── entry_points.txt
+│   │           │   ├── INSTALLER
+│   │           │   ├── LICENSE
+│   │           │   ├── METADATA
+│   │           │   ├── RECORD
+│   │           │   ├── REQUESTED
+│   │           │   ├── top_level.txt
+│   │           │   └── WHEEL
+│   │           └── distutils-precedence.pth
+│   ├── .gitignore
+│   └── pyvenv.cfg
+├── DataStore
+│   ├── FKPP
+│   │   └── 1x38
+│   │       └── paper_IC
+│   │           └── data.pkl
+│   ├── paper
+│   │   ├── fisher_KPP_data.npy
+│   │   └── porous_fisher_KPP_data.npy
+│   └── PFKPP
+│       └── 1x38
+│           └── paper_IC
+│               └── data.pkl
+├── Training
+│   ├── .ipynb_checkpoints
+│   │   └── model_training_FKPP_nb-checkpoint.ipynb
+│   ├── binn
+│   │   ├── dataX1num_11
+│   │   │   └── dataX2num_11
+│   │   │       └── dataTnum_9
+│   │   │           └── dataK_1
+│   │   │               ├── dataICLabel_cos
+│   │   │               │   └── dataDiffLabel_const
+│   │   │               │       ...
+│   │   │               └── dataICLabel_cosFlat0.5
+│   │   │                   └── dataDiffLabel_const
+│   │   │                       ...
+│   │   ├── dataX1num_38
+│   │   │   └── dataX2num_1
+│   │   │       └── dataTnum_5
+│   │   │           └── dataK_1
+│   │   │               └── dataICLabel_cos
+│   │   │                   ├── dataDiffLabel_const
+│   │   │                   │   ...
+│   │   │                   ├── dataDiffLabel_exp
+│   │   │                   │   ...
+│   │   │                   ├── dataDiffLabel_linear
+│   │   │                   │   ...
+│   │   │                   └── dataDiffLabel_quadratic
+│   │   │                       ...
+│   │   └── python
+│   │       ├── Modules
+│   │       │   ├── Models
+│   │       │   │   ├── .ipynb_checkpoints
+│   │       │   │   ├── __init__.py
+│   │       │   │   ├── BuildBINNs.py
+│   │       │   │   └── BuildMLP.py
+│   │       │   ├── Utils
+│   │       │   │   ├── __init__.py
+│   │       │   │   ├── Gradient.py
+│   │       │   │   ├── ModelWrapper.py
+│   │       │   │   └── parse.py
+│   │       │   └── __init__.py
+│   │       ├── pipeline
+│   │       │   ├── components
+│   │       │   │   ├── __init__.py
+│   │       │   │   ├── binn__firstTrain.py
+│   │       │   │   ├── binn__generateDataObj.py
+│   │       │   │   ├── binn__loadData.py
+│   │       │   │   ├── binn__modelConstructor.py
+│   │       │   │   ├── binn__modelDataLoss.py
+│   │       │   │   ├── binn__modelPDEloss.py
+│   │       │   │   ├── binn__retrain.py
+│   │       │   │   ├── binn__saveModel.py
+│   │       │   │   ├── binn__simulate.py
+│   │       │   │   ├── binn__splitTV.py
+│   │       │   │   └── runner.py
+│   │       │   ├── config
+│   │       │   │   ├── __init__.py
+│   │       │   │   └── binn__config.py
+│   │       │   ├── exec
+│   │       │   │   ├── __init__.py
+│   │       │   │   └── binn__sim.py
+│   │       │   └── __init__.py
+│   │       └── __init__.py
+│   ├── data
+│   │   ├── dataObj
+│   │   │   ├── dataX1num_11
+│   │   │   │   └── dataX2num_11
+│   │   │   │       └── dataTnum_9
+│   │   │   │           └── dataK_1
+│   │   │   │               └── dataICLabel_cos
+│   │   │   │                   ...
+│   │   │   ├── dataX1num_38
+│   │   │   │   └── dataX2num_1
+│   │   │   │       └── dataTnum_5
+│   │   │   │           └── dataK_1
+│   │   │   │               └── dataICLabel_cos
+│   │   │   │                   ...
+│   │   │   └── Lagergren_et_al_2020
+│   │   │       └── originalDataObj.npy
+│   │   ├── python
+│   │   │   ├── Modules
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── dataClass.py
+│   │   │   │   ├── parse.py
+│   │   │   │   ├── PDESolver_1D.py
+│   │   │   │   └── PDESolver_2D.py
+│   │   │   ├── pipeline
+│   │   │   │   ├── components
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── data__addNoise.py
+│   │   │   │   │   ├── data__constructor.py
+│   │   │   │   │   ├── data__initialise.py
+│   │   │   │   │   ├── data__simulate.py
+│   │   │   │   │   └── runner.py
+│   │   │   │   ├── config
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── data__config.py
+│   │   │   │   │   └── store.py
+│   │   │   │   ├── exec
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   └── data__sim.py
+│   │   │   │   └── __init__.py
+│   │   │   └── __init__.py
+│   │   └── __init__.py
+│   ├── JN
+│   │   ├── notebook_helpers
+│   │   │   ├── __init__.py
+│   │   │   ├── notebook_config.py
+│   │   │   ├── notebook_data.py
+│   │   │   ├── notebook_models.py
+│   │   │   └── notebook_setup.py
+│   │   ├── paper_helpers
+│   │   │   ├── __init__.py
+│   │   │   ├── file_finder.py
+│   │   │   ├── paths.py
+│   │   │   ├── plot_final_mse_grow.py
+│   │   │   ├── plot_final_mse_grow_2d.py
+│   │   │   ├── plotting_adam_diagnostics.py
+│   │   │   ├── plotting_data_loss_diagnostics.py
+│   │   │   ├── plotting_final_loss.py
+│   │   │   ├── plotting_final_mse.py
+│   │   │   ├── plotting_final_mse_2d.py
+│   │   │   ├── plotting_functions_over_epochs.py
+│   │   │   ├── plotting_loss_components.py
+│   │   │   ├── plotting_loss_running_min.py
+│   │   │   ├── plotting_mse_running_min.py
+│   │   │   ├── plotting_mse_running_min_growth.py
+│   │   │   ├── plotting_profiles.py
+│   │   │   ├── plotting_profiles_2d.py
+│   │   │   ├── plotting_timings.py
+│   │   │   ├── prepare_diff_mse.py
+│   │   │   ├── prepare_diff_mse_2d.py
+│   │   │   ├── prepare_grow_mse.py
+│   │   │   ├── prepare_grow_mse_2d.py
+│   │   │   ├── prepare_model_loss.py
+│   │   │   ├── prepare_model_loss_2d.py
+│   │   │   ├── real_space_plotter.py
+│   │   │   ├── real_space_plotter_2d.py
+│   │   │   ├── utils.py
+│   │   │   └── utils_2d.py
+│   │   ├── pngs
+│   │   │   ├── 1D
+│   │   │   │   ├── case1
+│   │   │   │   │   ├── fig5
+│   │   │   │   │   │   ├── plot_a_1.png
+│   │   │   │   │   │   ├── plot_a_2.png
+│   │   │   │   │   │   ├── plot_b_1.png
+│   │   │   │   │   │   ├── plot_b_2.png
+│   │   │   │   │   │   ├── plot_c.png
+│   │   │   │   │   │   └── plot_d.png
+│   │   │   │   │   ├── fig6
+│   │   │   │   │   │   ├── plot_a_1.png
+│   │   │   │   │   │   ├── plot_a_2.png
+│   │   │   │   │   │   ├── plot_b_1.png
+│   │   │   │   │   │   ├── plot_b_2.png
+│   │   │   │   │   │   ├── plot_c.png
+│   │   │   │   │   │   └── plot_d.png
+│   │   │   │   │   ├── fig7
+│   │   │   │   │   │   ├── plot_a.png
+│   │   │   │   │   │   ├── plot_b.png
+│   │   │   │   │   │   └── plot_c.png
+│   │   │   │   │   ├── figS1
+│   │   │   │   │   │   ├── figS2_LHS_100_0.png
+│   │   │   │   │   │   ├── figS2_LHS_10_0.png
+│   │   │   │   │   │   ├── figS2_LHS_1_0.png
+│   │   │   │   │   │   ├── figS2_LHS_2_0.png
+│   │   │   │   │   │   ├── plot_a.png
+│   │   │   │   │   │   ├── plot_b.png
+│   │   │   │   │   │   ├── plot_c.png
+│   │   │   │   │   │   ├── plot_d.png
+│   │   │   │   │   │   ├── plot_e.png
+│   │   │   │   │   │   ├── plot_RHS_0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   ├── plot_RHS_0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   │   ├── plot_RHS_1_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   ├── plot_RHS_1_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   │   ├── plot_RHS_2_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   ├── plot_RHS_2_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   │   ├── plot_RHS_3_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   └── plot_RHS_3_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   ├── figS2
+│   │   │   │   │   │   ├── plot_a.png
+│   │   │   │   │   │   ├── plot_d_16_1_diffusion_group_1_model0.png
+│   │   │   │   │   │   ├── plot_d_16_2_diffusion_group_1_model0.png
+│   │   │   │   │   │   ├── plot_d_64_1_diffusion_group_1_model0.png
+│   │   │   │   │   │   ├── plot_d_64_2_diffusion_group_1_model0.png
+│   │   │   │   │   │   ├── plot_e.png
+│   │   │   │   │   │   ├── plot_h_16_1_diffusion_group_1_model0.png
+│   │   │   │   │   │   ├── plot_h_16_2_diffusion_group_1_model0.png
+│   │   │   │   │   │   ├── plot_h_64_1_diffusion_group_1_model0.png
+│   │   │   │   │   │   └── plot_h_64_2_diffusion_group_1_model0.png
+│   │   │   │   │   ├── figS3
+│   │   │   │   │   │   ├── plot_a_1.png
+│   │   │   │   │   │   ├── plot_a_2.png
+│   │   │   │   │   │   ├── plot_a_3_D_mono.png
+│   │   │   │   │   │   ├── plot_b_1.png
+│   │   │   │   │   │   ├── plot_b_2.png
+│   │   │   │   │   │   ├── plot_b_3_D_mono.png
+│   │   │   │   │   │   ├── plot_c_1.png
+│   │   │   │   │   │   ├── plot_c_2.png
+│   │   │   │   │   │   ├── plot_c_3_D_mono.png
+│   │   │   │   │   │   ├── plot_d_1.png
+│   │   │   │   │   │   ├── plot_d_2.png
+│   │   │   │   │   │   └── plot_d_3_D_mono.png
+│   │   │   │   │   ├── figS4
+│   │   │   │   │   │   ├── Wu16_D_mono_weight_1000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   ├── Wu16_D_mono_weight_1000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   │   ├── Wu16_D_mono_weight_10000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   ├── Wu16_D_mono_weight_10000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   │   ├── Wu16_D_mono_weight_1000000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   ├── Wu16_D_mono_weight_1000000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   │   ├── Wu16_D_mono_weight_10_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   ├── Wu16_D_mono_weight_10_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   │   ├── Wu64_D_mono_weight_1000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   ├── Wu64_D_mono_weight_1000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   │   ├── Wu64_D_mono_weight_10000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   ├── Wu64_D_mono_weight_10000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   │   ├── Wu64_D_mono_weight_1000000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   ├── Wu64_D_mono_weight_1000000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   │   ├── Wu64_D_mono_weight_10_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   └── Wu64_D_mono_weight_10_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │   │   ├── figS6
+│   │   │   │   │   │   ├── plot_a1.png
+│   │   │   │   │   │   ├── plot_a2.png
+│   │   │   │   │   │   ├── plot_a3.png
+│   │   │   │   │   │   ├── plot_a4_diffusion_group_1_model0.png
+│   │   │   │   │   │   ├── plot_a5_diffusion_group_1_model0.png
+│   │   │   │   │   │   ├── plot_b1.png
+│   │   │   │   │   │   ├── plot_b2.png
+│   │   │   │   │   │   ├── plot_b3.png
+│   │   │   │   │   │   ├── plot_b4_diffusion_group_1_model0.png
+│   │   │   │   │   │   ├── plot_b5_diffusion_group_1_model0.png
+│   │   │   │   │   │   ├── plot_c1.png
+│   │   │   │   │   │   ├── plot_c2.png
+│   │   │   │   │   │   ├── plot_c3.png
+│   │   │   │   │   │   ├── plot_c4_diffusion_group_1_model0.png
+│   │   │   │   │   │   └── plot_c5_diffusion_group_1_model0.png
+│   │   │   │   │   └── figS7
+│   │   │   │   │       ├── bottom_row_GLS_diffusion_GLS_model0_ylim_0p015_0p11.png
+│   │   │   │   │       ├── bottom_row_GLS_diffusion_GLS_model0_ylim_0p0234_0p026.png
+│   │   │   │   │       ├── bottom_row_MSE_diffusion_MSE_model0_ylim_0p015_0p11.png
+│   │   │   │   │       ├── bottom_row_MSE_diffusion_MSE_model0_ylim_0p0234_0p026.png
+│   │   │   │   │       ├── plot_a.png
+│   │   │   │   │       ├── plot_b.png
+│   │   │   │   │       ├── plot_c.png
+│   │   │   │   │       ├── row2_actual_data_loss_top1_frac.png
+│   │   │   │   │       ├── row2_gls_pred_to_mse.png
+│   │   │   │   │       └── row2_weight_pred_neff_frac.png
+│   │   │   │   ├── case2
+│   │   │   │   │   ├── fig8_LHS
+│   │   │   │   │   │   ├── exp_plot_a_1.png
+│   │   │   │   │   │   ├── exp_plot_a_2.png
+│   │   │   │   │   │   ├── linear_plot_a_1.png
+│   │   │   │   │   │   ├── linear_plot_a_2.png
+│   │   │   │   │   │   ├── quadratic_plot_a_1.png
+│   │   │   │   │   │   └── quadratic_plot_a_2.png
+│   │   │   │   │   ├── fig8_RHS
+│   │   │   │   │   │   ├── exp_plot_0.png
+│   │   │   │   │   │   ├── exp_plot_1.png
+│   │   │   │   │   │   ├── exp_plot_2.png
+│   │   │   │   │   │   ├── linear_plot_0.png
+│   │   │   │   │   │   ├── linear_plot_1.png
+│   │   │   │   │   │   ├── linear_plot_2.png
+│   │   │   │   │   │   ├── quadratic_plot_0.png
+│   │   │   │   │   │   ├── quadratic_plot_1.png
+│   │   │   │   │   │   └── quadratic_plot_2.png
+│   │   │   │   │   └── figA2
+│   │   │   │   │       ├── plot_a.png
+│   │   │   │   │       ├── plot_b.png
+│   │   │   │   │       └── plot_c.png
+│   │   │   │   └── case3
+│   │   │   │       ├── fig9
+│   │   │   │       │   ├── plot_diff_const.png
+│   │   │   │       │   ├── plot_diff_exp.png
+│   │   │   │       │   ├── plot_diff_linear.png
+│   │   │   │       │   ├── plot_diff_quadratic.png
+│   │   │   │       │   ├── plot_grow_const.png
+│   │   │   │       │   ├── plot_grow_exp.png
+│   │   │   │       │   ├── plot_grow_linear.png
+│   │   │   │       │   └── plot_grow_quadratic.png
+│   │   │   │       ├── fig9_width
+│   │   │   │       ├── figA3
+│   │   │   │       │   ├── plot_a.png
+│   │   │   │       │   ├── plot_b.png
+│   │   │   │       │   ├── plot_c.png
+│   │   │   │       │   └── plot_d.png
+│   │   │   │       ├── figA4
+│   │   │   │       │   ├── plot_a.png
+│   │   │   │       │   ├── plot_b.png
+│   │   │   │       │   ├── plot_c.png
+│   │   │   │       │   └── plot_d.png
+│   │   │   │       └── figS5
+│   │   │   │           ├── plot_a.png
+│   │   │   │           ├── plot_b.png
+│   │   │   │           ├── plot_c.png
+│   │   │   │           ├── plot_d.png
+│   │   │   │           ├── plot_e.png
+│   │   │   │           ├── plot_LHS_f_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │           ├── plot_LHS_f_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │           ├── plot_LHS_g_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │           ├── plot_LHS_g_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │           ├── plot_LHS_h_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │           ├── plot_LHS_h_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │   │   │           ├── plot_RHS_f_growth_group_1_model0.png
+│   │   │   │           ├── plot_RHS_g_growth_group_1_model0.png
+│   │   │   │           └── plot_RHS_h_growth_group_1_model0.png
+│   │   │   ├── 2D
+│   │   │   │   └── case4
+│   │   │   │       ├── fig10
+│   │   │   │       │   ├── fig_a.png
+│   │   │   │       │   ├── fig_b.png
+│   │   │   │       │   ├── fig_c.png
+│   │   │   │       │   └── fig_d.png
+│   │   │   │       ├── figA5
+│   │   │   │       │   ├── plot_a_1.png
+│   │   │   │       │   ├── plot_a_2.png
+│   │   │   │       │   ├── plot_b_1.png
+│   │   │   │       │   ├── plot_b_2.png
+│   │   │   │       │   ├── plot_c_1.png
+│   │   │   │       │   ├── plot_c_2.png
+│   │   │   │       │   ├── plot_d_1.png
+│   │   │   │       │   └── plot_d_2.png
+│   │   │   │       └── figA6
+│   │   │   │           ├── fig_a.png
+│   │   │   │           └── fig_b.png
+│   │   │   ├── colocation
+│   │   │   │   ├── data_grid_points.png
+│   │   │   │   ├── pde_repeated_draws_1000_10.png
+│   │   │   │   └── pde_single_draw_1000.png
+│   │   │   └── TVsplit
+│   │   │       ├── ic1_0_histogram.png
+│   │   │       ├── ic1_0_lineplot.png
+│   │   │       ├── ic1_1_histogram.png
+│   │   │       ├── ic1_1_lineplot.png
+│   │   │       ├── ic2_0_histogram.png
+│   │   │       ├── ic2_0_lineplot.png
+│   │   │       ├── ic2_1_histogram.png
+│   │   │       └── ic2_1_lineplot.png
+│   │   ├── case1.ipynb
+│   │   ├── case2.ipynb
+│   │   ├── case3.ipynb
+│   │   ├── case4.ipynb
+│   │   ├── colocation_figure.ipynb
+│   │   ├── Note_depth.ipynb
+│   │   ├── S1_1.ipynb
+│   │   ├── S1_2.ipynb
+│   │   ├── S1_3.ipynb
+│   │   ├── S1_4.ipynb
+│   │   ├── S2.ipynb
+│   │   └── TVsplit_figure.ipynb
+│   ├── __init__.py
+│   └── pipeline_runtime.py
+├── Will_Hyperparameters_July
+│   ├── figures
+│   │   ├── Appendix_fig_1.tex
+│   │   ├── Appendix_fig_2.tex
+│   │   ├── Appendix_fig_3.tex
+│   │   ├── Appendix_fig_4.tex
+│   │   ├── Appendix_fig_5.tex
+│   │   ├── Appendix_fig_5_old.tex
+│   │   ├── Appendix_fig_6.tex
+│   │   ├── background_fig_1.tex
+│   │   ├── background_fig_2.tex
+│   │   ├── background_fig_3.tex
+│   │   ├── fig_flow.tex
+│   │   ├── fig_researcher_spectrum.tex
+│   │   ├── fig_researcher_table.tex
+│   │   ├── results_fig_1.tex
+│   │   ├── results_fig_2.tex
+│   │   ├── results_fig_3.tex
+│   │   ├── results_fig_4.tex
+│   │   ├── results_fig_5.tex
+│   │   └── results_fig_depth.tex
+│   ├── pngs
+│   │   ├── A1
+│   │   │   ├── binn_flow.png
+│   │   │   ├── case1.png
+│   │   │   ├── case2.png
+│   │   │   ├── case3.png
+│   │   │   ├── case4.png
+│   │   │   └── diff_flow.png
+│   │   ├── background
+│   │   │   ├── architecture
+│   │   │   │   ├── BINN_architecture_diff.png
+│   │   │   │   ├── BINN_architecture_reaction_diff.png
+│   │   │   │   ├── BINN_flow_diff.png
+│   │   │   │   └── BINN_flow_reaction_diff.png
+│   │   │   ├── colocation
+│   │   │   │   ├── data_grid_points.png
+│   │   │   │   ├── pde_repeated_draws_1000_10.png
+│   │   │   │   └── pde_single_draw_1000.png
+│   │   │   └── TVsplit
+│   │   │       ├── ic1_0_histogram.png
+│   │   │       ├── ic1_0_lineplot.png
+│   │   │       ├── ic1_1_histogram.png
+│   │   │       ├── ic1_1_lineplot.png
+│   │   │       ├── ic2_0_histogram.png
+│   │   │       ├── ic2_0_lineplot.png
+│   │   │       ├── ic2_1_histogram.png
+│   │   │       └── ic2_1_lineplot.png
+│   │   └── results
+│   │       ├── case1
+│   │       │   ├── fig5
+│   │       │   │   ├── plot_a_1.png
+│   │       │   │   ├── plot_a_2.png
+│   │       │   │   ├── plot_b_1.png
+│   │       │   │   ├── plot_b_2.png
+│   │       │   │   ├── plot_c.png
+│   │       │   │   └── plot_d.png
+│   │       │   ├── fig6
+│   │       │   │   ├── plot_a_1.png
+│   │       │   │   ├── plot_a_2.png
+│   │       │   │   ├── plot_b_1.png
+│   │       │   │   ├── plot_b_2.png
+│   │       │   │   ├── plot_c.png
+│   │       │   │   └── plot_d.png
+│   │       │   ├── fig7
+│   │       │   │   ├── plot_a.png
+│   │       │   │   ├── plot_b.png
+│   │       │   │   └── plot_c.png
+│   │       │   ├── figS1
+│   │       │   │   ├── plot_a.png
+│   │       │   │   ├── plot_b.png
+│   │       │   │   ├── plot_c.png
+│   │       │   │   ├── plot_d.png
+│   │       │   │   ├── plot_e.png
+│   │       │   │   ├── plot_RHS_0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   ├── plot_RHS_0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   │   ├── plot_RHS_1_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   ├── plot_RHS_1_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   │   ├── plot_RHS_2_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   ├── plot_RHS_2_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   │   ├── plot_RHS_3_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   └── plot_RHS_3_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   ├── figS2
+│   │       │   │   ├── plot_a.png
+│   │       │   │   ├── plot_d_16_1_diffusion_group_1_model0.png
+│   │       │   │   ├── plot_d_16_2_diffusion_group_1_model0.png
+│   │       │   │   ├── plot_d_64_1_diffusion_group_1_model0.png
+│   │       │   │   ├── plot_d_64_2_diffusion_group_1_model0.png
+│   │       │   │   ├── plot_e.png
+│   │       │   │   ├── plot_h_16_1_diffusion_group_1_model0.png
+│   │       │   │   ├── plot_h_16_2_diffusion_group_1_model0.png
+│   │       │   │   ├── plot_h_64_1_diffusion_group_1_model0.png
+│   │       │   │   └── plot_h_64_2_diffusion_group_1_model0.png
+│   │       │   ├── figS3
+│   │       │   │   ├── plot_a_1.png
+│   │       │   │   ├── plot_a_2.png
+│   │       │   │   ├── plot_a_3_D_mono.png
+│   │       │   │   ├── plot_b_1.png
+│   │       │   │   ├── plot_b_2.png
+│   │       │   │   ├── plot_b_3_D_mono.png
+│   │       │   │   ├── plot_c_1.png
+│   │       │   │   ├── plot_c_2.png
+│   │       │   │   ├── plot_c_3_D_mono.png
+│   │       │   │   ├── plot_d_1.png
+│   │       │   │   ├── plot_d_2.png
+│   │       │   │   └── plot_d_3_D_mono.png
+│   │       │   ├── figS4
+│   │       │   │   ├── Wu16_D_mono_weight_1000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   ├── Wu16_D_mono_weight_1000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   │   ├── Wu16_D_mono_weight_10000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   ├── Wu16_D_mono_weight_10000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   │   ├── Wu16_D_mono_weight_1000000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   ├── Wu16_D_mono_weight_1000000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   │   ├── Wu16_D_mono_weight_10_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   ├── Wu16_D_mono_weight_10_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   │   ├── Wu64_D_mono_weight_1000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   ├── Wu64_D_mono_weight_1000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   │   ├── Wu64_D_mono_weight_10000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   ├── Wu64_D_mono_weight_10000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   │   ├── Wu64_D_mono_weight_1000000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   ├── Wu64_D_mono_weight_1000000.0_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   │   ├── Wu64_D_mono_weight_10_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │   │   └── Wu64_D_mono_weight_10_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │   ├── figS6
+│   │       │   │   ├── plot_a1.png
+│   │       │   │   ├── plot_a2.png
+│   │       │   │   ├── plot_a3.png
+│   │       │   │   ├── plot_a4_diffusion_group_1_model0.png
+│   │       │   │   ├── plot_a5_diffusion_group_1_model0.png
+│   │       │   │   ├── plot_b1.png
+│   │       │   │   ├── plot_b2.png
+│   │       │   │   ├── plot_b3.png
+│   │       │   │   ├── plot_b4_diffusion_group_1_model0.png
+│   │       │   │   ├── plot_b5_diffusion_group_1_model0.png
+│   │       │   │   ├── plot_c1.png
+│   │       │   │   ├── plot_c2.png
+│   │       │   │   ├── plot_c3.png
+│   │       │   │   ├── plot_c4_diffusion_group_1_model0.png
+│   │       │   │   └── plot_c5_diffusion_group_1_model0.png
+│   │       │   └── figS7
+│   │       │       ├── bottom_row_GLS_diffusion_GLS_model0_ylim_0p015_0p11.png
+│   │       │       ├── bottom_row_GLS_diffusion_GLS_model0_ylim_0p0234_0p026.png
+│   │       │       ├── bottom_row_MSE_diffusion_MSE_model0_ylim_0p015_0p11.png
+│   │       │       ├── bottom_row_MSE_diffusion_MSE_model0_ylim_0p0234_0p026.png
+│   │       │       ├── plot_a.png
+│   │       │       ├── plot_b.png
+│   │       │       ├── plot_c.png
+│   │       │       ├── row2_actual_data_loss_top1_frac.png
+│   │       │       ├── row2_gls_pred_to_mse.png
+│   │       │       └── row2_weight_pred_neff_frac.png
+│   │       ├── case2
+│   │       │   ├── fig8_LHS
+│   │       │   │   ├── exp_plot_a_1.png
+│   │       │   │   ├── exp_plot_a_2.png
+│   │       │   │   ├── linear_plot_a_1.png
+│   │       │   │   ├── linear_plot_a_2.png
+│   │       │   │   ├── quadratic_plot_a_1.png
+│   │       │   │   └── quadratic_plot_a_2.png
+│   │       │   ├── fig8_RHS
+│   │       │   │   ├── exp_plot_0.png
+│   │       │   │   ├── exp_plot_1.png
+│   │       │   │   ├── exp_plot_2.png
+│   │       │   │   ├── linear_plot_0.png
+│   │       │   │   ├── linear_plot_1.png
+│   │       │   │   ├── linear_plot_2.png
+│   │       │   │   ├── quadratic_plot_0.png
+│   │       │   │   ├── quadratic_plot_1.png
+│   │       │   │   └── quadratic_plot_2.png
+│   │       │   └── figA2
+│   │       │       ├── plot_a.png
+│   │       │       ├── plot_b.png
+│   │       │       └── plot_c.png
+│   │       ├── case3
+│   │       │   ├── fig9
+│   │       │   │   ├── plot_diff_const.png
+│   │       │   │   ├── plot_diff_exp.png
+│   │       │   │   ├── plot_diff_linear.png
+│   │       │   │   ├── plot_diff_quadratic.png
+│   │       │   │   ├── plot_grow_const.png
+│   │       │   │   ├── plot_grow_exp.png
+│   │       │   │   ├── plot_grow_linear.png
+│   │       │   │   └── plot_grow_quadratic.png
+│   │       │   ├── fig9_width
+│   │       │   │   ├── plot_diff_const.png
+│   │       │   │   ├── plot_diff_exp.png
+│   │       │   │   ├── plot_diff_linear.png
+│   │       │   │   ├── plot_diff_quadratic.png
+│   │       │   │   ├── plot_grow_const.png
+│   │       │   │   ├── plot_grow_exp.png
+│   │       │   │   ├── plot_grow_linear.png
+│   │       │   │   └── plot_grow_quadratic.png
+│   │       │   ├── figA3
+│   │       │   │   ├── plot_a.png
+│   │       │   │   ├── plot_b.png
+│   │       │   │   ├── plot_c.png
+│   │       │   │   └── plot_d.png
+│   │       │   ├── figA4
+│   │       │   │   ├── plot_a.png
+│   │       │   │   ├── plot_b.png
+│   │       │   │   ├── plot_c.png
+│   │       │   │   └── plot_d.png
+│   │       │   └── figS5
+│   │       │       ├── plot_a.png
+│   │       │       ├── plot_b.png
+│   │       │       ├── plot_c.png
+│   │       │       ├── plot_d.png
+│   │       │       ├── plot_e.png
+│   │       │       ├── plot_LHS_f_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │       ├── plot_LHS_f_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │       ├── plot_LHS_g_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │       ├── plot_LHS_g_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │       ├── plot_LHS_h_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │       │       ├── plot_LHS_h_diffusion_group_1_model0_ylim_0p0234_0p026.png
+│   │       │       ├── plot_RHS_f_growth_group_1_model0.png
+│   │       │       ├── plot_RHS_g_growth_group_1_model0.png
+│   │       │       └── plot_RHS_h_growth_group_1_model0.png
+│   │       └── case4
+│   │           ├── fig10
+│   │           │   ├── fig_a.png
+│   │           │   ├── fig_b.png
+│   │           │   ├── fig_c.png
+│   │           │   └── fig_d.png
+│   │           ├── figA5
+│   │           │   ├── plot_a_1.png
+│   │           │   ├── plot_a_2.png
+│   │           │   ├── plot_b_1.png
+│   │           │   ├── plot_b_2.png
+│   │           │   ├── plot_c_1.png
+│   │           │   ├── plot_d_1.png
+│   │           │   └── plot_d_2.png
+│   │           └── figA6
+│   │               ├── fig_a.png
+│   │               └── fig_b.png
+│   ├── SM
+│   │   ├── algos
+│   │   │   ├── algos_ES.tex
+│   │   │   └── algos_ES_plot.tex
+│   │   ├── figures
+│   │   │   ├── SM1
+│   │   │   │   ├── SM11_fig1.tex
+│   │   │   │   ├── SM11_fig1_old.tex
+│   │   │   │   ├── SM12_fig1.tex
+│   │   │   │   ├── SM12_fig1_old.tex
+│   │   │   │   ├── SM12_fig2.tex
+│   │   │   │   ├── SM12_fig3.tex
+│   │   │   │   ├── SM13_fig1.tex
+│   │   │   │   └── SM14_fig1.tex
+│   │   │   └── SM2
+│   │   │       └── SM21_fig1.tex
+│   │   ├── SM11.tex
+│   │   ├── SM12.tex
+│   │   ├── SM13.tex
+│   │   ├── SM14.tex
+│   │   ├── SM2.tex
+│   │   ├── SM31.tex
+│   │   ├── SM32.tex
+│   │   └── SM33.tex
+│   ├── tables
+│   │   ├── methods_table_1.tex
+│   │   └── methods_table_2.tex
+│   ├── Abst.tex
+│   ├── Appendix.tex
+│   ├── arxiv.sty
+│   ├── authors.tex
+│   ├── Background.tex
+│   ├── Discussion.tex
+│   ├── end-sections.tex
+│   ├── Intro.tex
+│   ├── License.txt
+│   ├── main_june.tex
+│   ├── Methods.tex
+│   ├── orcid.pdf
+│   ├── preamble.tex
+│   ├── references.bib
+│   ├── references_auto.bib
+│   └── Results.tex
+├── .gitattributes
+├── .gitignore
+├── batch_commit_push_data_dirs.sh
+├── commit_push_everything_but_trained_models.sh
+├── environment.yml
+├── notebook_data_obj_inventory.xlsx
+├── notebook_data_obj_inventory.xlsx.inspect.ndjson
+├── notebook_model_inventory.xlsx
+├── notebook_model_inventory.xlsx.inspect.ndjson
+├── README.md
+└── repo_tree_no_pycache.txt

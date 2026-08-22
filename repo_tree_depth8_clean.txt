@@ -1,0 +1,245 @@
+.
+├── DataStore
+│   ├── FKPP
+│   │   └── 1x38
+│   │       └── paper_IC
+│   │           └── data.pkl
+│   ├── paper
+│   │   ├── fisher_KPP_data.npy
+│   │   └── porous_fisher_KPP_data.npy
+│   └── PFKPP
+│       └── 1x38
+│           └── paper_IC
+│               └── data.pkl
+├── Training
+│   ├── binn
+│   │   ├── dataX1num_11
+│   │   │   └── dataX2num_11
+│   │   │       └── dataTnum_9
+│   │   │           └── dataK_1
+│   │   │               ├── dataICLabel_cos
+│   │   │               │   └── dataDiffLabel_const
+│   │   │               │       ...
+│   │   │               └── dataICLabel_cosFlat0.5
+│   │   │                   └── dataDiffLabel_const
+│   │   │                       ...
+│   │   ├── dataX1num_38
+│   │   │   └── dataX2num_1
+│   │   │       └── dataTnum_5
+│   │   │           └── dataK_1
+│   │   │               └── dataICLabel_cos
+│   │   │                   ├── dataDiffLabel_const
+│   │   │                   │   ...
+│   │   │                   ├── dataDiffLabel_exp
+│   │   │                   │   ...
+│   │   │                   ├── dataDiffLabel_linear
+│   │   │                   │   ...
+│   │   │                   └── dataDiffLabel_quadratic
+│   │   │                       ...
+│   │   └── python
+│   │       ├── Modules
+│   │       │   ├── Models
+│   │       │   │   ├── __init__.py
+│   │       │   │   ├── BuildBINNs.py
+│   │       │   │   └── BuildMLP.py
+│   │       │   ├── Utils
+│   │       │   │   ├── __init__.py
+│   │       │   │   ├── Gradient.py
+│   │       │   │   ├── ModelWrapper.py
+│   │       │   │   └── parse.py
+│   │       │   └── __init__.py
+│   │       ├── pipeline
+│   │       │   ├── components
+│   │       │   │   ├── __init__.py
+│   │       │   │   ├── binn__firstTrain.py
+│   │       │   │   ├── binn__generateDataObj.py
+│   │       │   │   ├── binn__loadData.py
+│   │       │   │   ├── binn__modelConstructor.py
+│   │       │   │   ├── binn__modelDataLoss.py
+│   │       │   │   ├── binn__modelPDEloss.py
+│   │       │   │   ├── binn__retrain.py
+│   │       │   │   ├── binn__saveModel.py
+│   │       │   │   ├── binn__simulate.py
+│   │       │   │   ├── binn__splitTV.py
+│   │       │   │   └── runner.py
+│   │       │   ├── config
+│   │       │   │   ├── __init__.py
+│   │       │   │   └── binn__config.py
+│   │       │   ├── exec
+│   │       │   │   ├── __init__.py
+│   │       │   │   └── binn__sim.py
+│   │       │   └── __init__.py
+│   │       └── __init__.py
+│   ├── data
+│   │   ├── dataObj
+│   │   │   ├── dataX1num_11
+│   │   │   │   └── dataX2num_11
+│   │   │   │       └── dataTnum_9
+│   │   │   │           └── dataK_1
+│   │   │   │               └── dataICLabel_cos
+│   │   │   │                   ...
+│   │   │   ├── dataX1num_38
+│   │   │   │   └── dataX2num_1
+│   │   │   │       └── dataTnum_5
+│   │   │   │           └── dataK_1
+│   │   │   │               └── dataICLabel_cos
+│   │   │   │                   ...
+│   │   │   └── Lagergren_et_al_2020
+│   │   │       └── originalDataObj.npy
+│   │   ├── python
+│   │   │   ├── Modules
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── dataClass.py
+│   │   │   │   ├── parse.py
+│   │   │   │   ├── PDESolver_1D.py
+│   │   │   │   └── PDESolver_2D.py
+│   │   │   ├── pipeline
+│   │   │   │   ├── components
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── data__addNoise.py
+│   │   │   │   │   ├── data__constructor.py
+│   │   │   │   │   ├── data__initialise.py
+│   │   │   │   │   ├── data__simulate.py
+│   │   │   │   │   └── runner.py
+│   │   │   │   ├── config
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── data__config.py
+│   │   │   │   │   └── store.py
+│   │   │   │   ├── exec
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   └── data__sim.py
+│   │   │   │   └── __init__.py
+│   │   │   └── __init__.py
+│   │   └── __init__.py
+│   ├── JN
+│   │   ├── notebook_helpers
+│   │   │   ├── __init__.py
+│   │   │   ├── notebook_config.py
+│   │   │   ├── notebook_data.py
+│   │   │   ├── notebook_models.py
+│   │   │   └── notebook_setup.py
+│   │   ├── paper_helpers
+│   │   │   ├── __init__.py
+│   │   │   ├── file_finder.py
+│   │   │   ├── paths.py
+│   │   │   ├── plot_final_mse_grow.py
+│   │   │   ├── plot_final_mse_grow_2d.py
+│   │   │   ├── plotting_adam_diagnostics.py
+│   │   │   ├── plotting_data_loss_diagnostics.py
+│   │   │   ├── plotting_final_loss.py
+│   │   │   ├── plotting_final_mse.py
+│   │   │   ├── plotting_final_mse_2d.py
+│   │   │   ├── plotting_functions_over_epochs.py
+│   │   │   ├── plotting_loss_components.py
+│   │   │   ├── plotting_loss_running_min.py
+│   │   │   ├── plotting_mse_running_min.py
+│   │   │   ├── plotting_mse_running_min_growth.py
+│   │   │   ├── plotting_profiles.py
+│   │   │   ├── plotting_profiles_2d.py
+│   │   │   ├── plotting_timings.py
+│   │   │   ├── prepare_diff_mse.py
+│   │   │   ├── prepare_diff_mse_2d.py
+│   │   │   ├── prepare_grow_mse.py
+│   │   │   ├── prepare_grow_mse_2d.py
+│   │   │   ├── prepare_model_loss.py
+│   │   │   ├── prepare_model_loss_2d.py
+│   │   │   ├── real_space_plotter.py
+│   │   │   ├── real_space_plotter_2d.py
+│   │   │   ├── utils.py
+│   │   │   └── utils_2d.py
+│   │   ├── pngs
+│   │   │   ├── 1D
+│   │   │   │   ├── case1
+│   │   │   │   │   ├── fig5
+│   │   │   │   │   │   ├── plot_a_1.png
+│   │   │   │   │   │   └── ...
+│   │   │   │   │   ├── fig6
+│   │   │   │   │   │   ├── plot_a_1.png
+│   │   │   │   │   │   └── ...
+│   │   │   │   │   ├── fig7
+│   │   │   │   │   │   ├── plot_a.png
+│   │   │   │   │   │   └── ...
+│   │   │   │   │   ├── figS1
+│   │   │   │   │   │   ├── figS2_LHS_100_0.png
+│   │   │   │   │   │   └── ...
+│   │   │   │   │   ├── figS2
+│   │   │   │   │   │   ├── plot_a.png
+│   │   │   │   │   │   └── ...
+│   │   │   │   │   ├── figS3
+│   │   │   │   │   │   ├── plot_a_1.png
+│   │   │   │   │   │   └── ...
+│   │   │   │   │   ├── figS4
+│   │   │   │   │   │   ├── Wu16_D_mono_weight_1000.0_diffusion_group_1_model0_ylim_0p015_0p11.png
+│   │   │   │   │   │   └── ...
+│   │   │   │   │   ├── figS6
+│   │   │   │   │   │   ├── plot_a1.png
+│   │   │   │   │   │   └── ...
+│   │   │   │   │   └── figS7
+│   │   │   │   │       ├── bottom_row_GLS_diffusion_GLS_model0_ylim_0p015_0p11.png
+│   │   │   │   │       └── ...
+│   │   │   │   ├── case2
+│   │   │   │   │   ├── fig8_LHS
+│   │   │   │   │   │   ├── exp_plot_a_1.png
+│   │   │   │   │   │   └── ...
+│   │   │   │   │   ├── fig8_RHS
+│   │   │   │   │   │   ├── exp_plot_0.png
+│   │   │   │   │   │   └── ...
+│   │   │   │   │   └── figA2
+│   │   │   │   │       ├── plot_a.png
+│   │   │   │   │       └── ...
+│   │   │   │   └── case3
+│   │   │   │       ├── fig9
+│   │   │   │       │   ├── plot_diff_const.png
+│   │   │   │       │   └── ...
+│   │   │   │       ├── fig9_width
+│   │   │   │       ├── figA3
+│   │   │   │       │   ├── plot_a.png
+│   │   │   │       │   └── ...
+│   │   │   │       ├── figA4
+│   │   │   │       │   ├── plot_a.png
+│   │   │   │       │   └── ...
+│   │   │   │       └── figS5
+│   │   │   │           ├── plot_a.png
+│   │   │   │           └── ...
+│   │   │   ├── 2D
+│   │   │   │   └── case4
+│   │   │   │       ├── fig10
+│   │   │   │       │   ├── fig_a.png
+│   │   │   │       │   └── ...
+│   │   │   │       ├── figA5
+│   │   │   │       │   ├── plot_a_1.png
+│   │   │   │       │   └── ...
+│   │   │   │       └── figA6
+│   │   │   │           ├── fig_a.png
+│   │   │   │           └── ...
+│   │   │   ├── colocation
+│   │   │   │   ├── data_grid_points.png
+│   │   │   │   └── ...
+│   │   │   └── TVsplit
+│   │   │       ├── ic1_0_histogram.png
+│   │   │       └── ...
+│   │   ├── case1.ipynb
+│   │   ├── case2.ipynb
+│   │   ├── case3.ipynb
+│   │   ├── case4.ipynb
+│   │   ├── colocation_figure.ipynb
+│   │   ├── Note_depth.ipynb
+│   │   ├── S1_1.ipynb
+│   │   ├── S1_2.ipynb
+│   │   ├── S1_3.ipynb
+│   │   ├── S1_4.ipynb
+│   │   ├── S2.ipynb
+│   │   └── TVsplit_figure.ipynb
+│   ├── __init__.py
+│   └── pipeline_runtime.py
+├── batch_commit_push_data_dirs.sh
+├── commit_push_everything_but_trained_models.sh
+├── environment.yml
+├── notebook_data_obj_inventory.xlsx
+├── notebook_data_obj_inventory.xlsx.inspect.ndjson
+├── notebook_model_inventory.xlsx
+├── notebook_model_inventory.xlsx.inspect.ndjson
+├── README.md
+├── repo_tree_depth8.txt
+├── repo_tree_depth8_clean.txt
+└── repo_tree_no_pycache.txt
