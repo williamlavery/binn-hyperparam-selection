@@ -39,20 +39,21 @@ The runtime entry points are:
 
 Both entry points build their sweep settings from Python config files.
 
+
 ## Repository structure
 
 Colour key:
 
-- <span style="color:#0f766e;">README / documentation</span>
-- <span style="color:#2563eb;">Python source</span>
-- <span style="color:#7c3aed;">Notebook</span>
-- <span style="color:#b45309;">Shell script</span>
-- <span style="color:#047857;">Environment / config</span>
-- <span style="color:#be123c;">Spreadsheet / inventory</span>
+- 🟢 README / documentation
+- 🔵 Python source
+- 🟣 Notebook
+- 🟠 Shell script
+- 🟡 Environment / config
+- 🔴 Spreadsheet / inventory
 
 <pre><code>hyperparam-selection/
-├── <span style="color:#0f766e;">README.md</span>
-├── <span style="color:#047857;">environment.yml</span>
+├── 🟢 README.md
+├── 🟡 environment.yml
 ├── DataStore/
 │   ├── FKPP/
 │   │   └── 1x38/
@@ -63,8 +64,8 @@ Colour key:
 │   └── PFKPP/
 │       └── ...
 ├── Training/
-│   ├── <span style="color:#0f766e;">README.md</span>
-│   ├── <span style="color:#2563eb;">pipeline_runtime.py</span>
+│   ├── 🟢 README.md
+│   ├── 🔵 pipeline_runtime.py
 │   ├── data/
 │   │   ├── dataObj/
 │   │   │   ├── dataX1num_11/
@@ -74,7 +75,7 @@ Colour key:
 │   │   │   └── Lagergren_et_al_2020/
 │   │   │       └── ...
 │   │   └── python/
-│   │       ├── <span style="color:#0f766e;">README.md</span>
+│   │       ├── 🟢 README.md
 │   │       ├── Modules/
 │   │       │   └── ...
 │   │       └── pipeline/
@@ -85,23 +86,23 @@ Colour key:
 │   │           └── exec/
 │   │               └── ...
 │   ├── binn/
-│   │   ├── <span style="color:#0f766e;">README.md</span>
+│   │   ├── 🟢 README.md
 │   │   ├── dataX1num_11/
 │   │   │   └── ...
 │   │   ├── dataX1num_38/
 │   │   │   └── ...
 │   │   └── python/
 │   │       ├── Modules/
-│   │       │   ├── <span style="color:#0f766e;">README.md</span>
+│   │       │   ├── 🟢 README.md
 │   │       │   └── ...
 │   │       └── pipeline/
 │   │           └── ...
 │   └── JN/
-│       ├── <span style="color:#0f766e;">README.md</span>
+│       ├── 🟢 README.md
 │       ├── notebook_helpers/
 │       │   └── ...
 │       ├── paper_helpers/
-│       │   ├── <span style="color:#0f766e;">README.md</span>
+│       │   ├── 🟢 README.md
 │       │   └── ...
 │       ├── pngs/
 │       │   ├── 1D/
@@ -112,22 +113,22 @@ Colour key:
 │       │   │   └── ...
 │       │   └── TVsplit/
 │       │       └── ...
-│       ├── <span style="color:#7c3aed;">case1.ipynb</span>
-│       ├── <span style="color:#7c3aed;">case2.ipynb</span>
-│       ├── <span style="color:#7c3aed;">case3.ipynb</span>
-│       ├── <span style="color:#7c3aed;">case4.ipynb</span>
-│       ├── <span style="color:#7c3aed;">Note_depth.ipynb</span>
-│       ├── <span style="color:#7c3aed;">S1_1.ipynb</span>
-│       ├── <span style="color:#7c3aed;">S1_2.ipynb</span>
-│       ├── <span style="color:#7c3aed;">S1_3.ipynb</span>
-│       ├── <span style="color:#7c3aed;">S1_4.ipynb</span>
-│       ├── <span style="color:#7c3aed;">S2.ipynb</span>
-│       ├── <span style="color:#7c3aed;">colocation_figure.ipynb</span>
-│       └── <span style="color:#7c3aed;">TVsplit_figure.ipynb</span>
-├── <span style="color:#be123c;">notebook_data_obj_inventory.xlsx</span>
-├── <span style="color:#be123c;">notebook_model_inventory.xlsx</span>
-├── <span style="color:#b45309;">commit_push_everything_but_trained_models.sh</span>
-└── <span style="color:#b45309;">batch_commit_push_data_dirs.sh</span>
+│       ├── 🟣 case1.ipynb
+│       ├── 🟣 case2.ipynb
+│       ├── 🟣 case3.ipynb
+│       ├── 🟣 case4.ipynb
+│       ├── 🟣 Note_depth.ipynb
+│       ├── 🟣 S1_1.ipynb
+│       ├── 🟣 S1_2.ipynb
+│       ├── 🟣 S1_3.ipynb
+│       ├── 🟣 S1_4.ipynb
+│       ├── 🟣 S2.ipynb
+│       ├── 🟣 colocation_figure.ipynb
+│       └── 🟣 TVsplit_figure.ipynb
+├── 🔴 notebook_data_obj_inventory.xlsx
+├── 🔴 notebook_model_inventory.xlsx
+├── 🟠 commit_push_everything_but_trained_models.sh
+└── 🟠 batch_commit_push_data_dirs.sh
 </code></pre>
 
 ## Environment setup
