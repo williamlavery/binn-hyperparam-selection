@@ -37,7 +37,7 @@ from .real_space_plotter import (
     plot_eval_G_multi_gray,
     symbolic_from_function,
 )
-from .utils import scale_function_by_percent_error
+from .utils import metric_u_grid, scale_function_by_percent_error
 from .real_space_plotter_2d import (
     plot_eval_D_multi_gray as plot_eval_D_multi_gray_2d,
     plot_eval_G_multi_gray as plot_eval_G_multi_gray_2d,
@@ -48,6 +48,7 @@ from .real_space_plotter_2d import (
 __all__ = [
     "condense_df",
     "dictToPath",
+    "metric_u_grid",
     "scale_function_by_percent_error",
     "print_path_components",
     "plot_adam_D_diagnostics",

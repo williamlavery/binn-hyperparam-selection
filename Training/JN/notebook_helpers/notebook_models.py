@@ -5,7 +5,7 @@ Contents
 - build_model_catalog: build a dataframe catalog of saved model files.
 - infer_path_keys: infer the path-key suffix used in saved model directories.
 - active_constraint_settings: expand a constraint tuple into active settings.
-- build_model_path: construct a model path from fixed and dynamic filters.
+ - build_model_path: construct a model path from fixed and dynamic filters.
 - resolve_model_path_from_catalog: resolve the exact saved model path from a catalog.
 - build_requested_models: enumerate requested model combinations on a grid.
 - summarize_requested_models: report how many requested models exist on disk.
@@ -29,8 +29,6 @@ DEFAULT_OPTIONAL_MODEL_VALUES = {
     "binnSurfaceHiddenLayers": 3,
     "binnDGHiddenLayers": 3,
 }
-
-
 def build_model_catalog(root: str | Path, target_filename: str = "binnModel0.pth"):
     root_path = Path(root)
     return paths_to_df(
@@ -73,8 +71,6 @@ def active_constraint_settings(
             settings[key] = constraint_bounds[key]
 
     return settings
-
-
 def build_model_path(
     root: str | Path,
     fixed_filters: dict[str, Any],

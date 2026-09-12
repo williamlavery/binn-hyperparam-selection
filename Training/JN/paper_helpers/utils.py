@@ -5,6 +5,7 @@ Contents
 - to_torch
 - hist_properties
 - symbolic_from_function
+- metric_u_grid
 - scale_function_by_percent_error"""
 
 import numpy as np
@@ -12,6 +13,7 @@ import torch
 import sympy as sp
 import ast
 import inspect
+import warnings
 
 
 def to_torch(ndarray, device):
@@ -136,14 +138,56 @@ def symbolic_from_function(func, var_name="u"):
     return expr
 
 
-def scale_function_by_percent_error(func, beta, n_points=1001):
-    """Return a percent-scaled callable plus MSE and mean absolute percentage error."""
+def metric_u_grid(dataobj, n_points=20):
+    """
+    Return the density grid on which the ground-truth error metrics are evaluated.
+
+    Mirrors `BINN.u_vals`: `n_points` equally spaced values spanning the
+    noise-free density field of `dataobj`. Passing this grid to
+    `scale_function_by_percent_error` normalises the reference percentage levels
+    over exactly the density range on which the reported MSE is computed.
+
+    Parameters
+    ----------
+    dataobj : object
+        Data container with a `u_clean` attribute.
+    n_points : int, optional
+        Number of grid points, by default 20 (matching `BINN.diffusion_samples`).
+
+    Returns
+    -------
+    numpy.ndarray
+        Equally spaced grid spanning [min(u_clean), max(u_clean)].
+    """
+    u_clean = np.asarray(dataobj.u_clean, dtype=float)
+    return np.linspace(float(u_clean.min()), float(u_clean.max()), n_points)
+
+
+def scale_function_by_percent_error(func, beta, n_points=1001, u_grid=None):
+    """
+    Return a percent-scaled callable plus MSE and mean absolute percentage error.
+
+    The MSE is the level a uniform `beta` percent rescaling of `func` produces,
+    averaged over `u_grid`. Pass `u_grid=metric_u_grid(dataobj)` so that the
+    level is normalised over the same density range as the reported ground-truth
+    MSE.
+    """
     scale = 1.0 + beta / 100.0
 
     def scaled_func(u):
         return scale * func(u)
 
-    u = np.linspace(0.0, 1.0, n_points)
+    if u_grid is None:
+        warnings.warn(
+            "scale_function_by_percent_error called without u_grid: the reference "
+            "level is normalised over [0, 1] rather than the density range on "
+            "which the MSE is evaluated. Pass u_grid=metric_u_grid(dataobj).",
+            RuntimeWarning,
+            stacklevel=2,
+        )
+        u = np.linspace(0.0, 1.0, n_points)
+    else:
+        u = np.asarray(u_grid, dtype=float).reshape(-1)
     func_vals = np.array([func(ui) for ui in u])
     scaled_vals = scale * func_vals
     mse = np.mean((scaled_vals - func_vals) ** 2)
