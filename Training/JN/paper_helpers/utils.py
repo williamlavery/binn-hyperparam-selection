@@ -163,7 +163,7 @@ def metric_u_grid(dataobj, n_points=20):
     return np.linspace(float(u_clean.min()), float(u_clean.max()), n_points)
 
 
-def scale_function_by_percent_error(func, beta, n_points=1001, u_grid=None):
+def scale_function_by_percent_error(func, beta, n_points=20, u_grid=None):
     """
     Return a percent-scaled callable plus MSE and mean absolute percentage error.
 
