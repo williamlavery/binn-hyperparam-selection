@@ -19,6 +19,7 @@ Contents
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.lines import Line2D
+from matplotlib.ticker import NullFormatter
 from .prepare_diff_mse import prepare_diff_run_data
 
 
@@ -248,7 +249,9 @@ def _plot_diffusion_runs(
             )
 
 
-def _format_broken_x_axes(ax1, ax2, xaxis, fontsizes):
+def _format_broken_x_axes(
+    ax1, ax2, xaxis, fontsizes, hide_minor_x_tick_labels=False
+):
     """Apply scales, labels, limits, and tick formatting to the axes."""
     x_min = xaxis["min"]
     x_max = xaxis["max"]
@@ -277,6 +280,9 @@ def _format_broken_x_axes(ax1, ax2, xaxis, fontsizes):
     ax1.yaxis.set_tick_params(labelsize=ytick_font)
     ax1.xaxis.set_tick_params(labelsize=xtick_font)
     ax2.xaxis.set_tick_params(labelsize=xtick_font)
+    if hide_minor_x_tick_labels:
+        for ax in (ax1, ax2):
+            ax.xaxis.set_minor_formatter(NullFormatter())
 
 
 def _add_broken_axis_diagonals(ax1, ax2):
@@ -383,6 +389,7 @@ def plot_running_min_MSE_diff_loss_broken_x_log_lst(
     plot_params=None,
     plot_settings=None,
     restrict_to_central_90=False,
+    hide_minor_x_tick_labels=False,
 ):
     """
     Plot running-min diffusion MSE loss for multiple experiment groups,
@@ -439,7 +446,9 @@ def plot_running_min_MSE_diff_loss_broken_x_log_lst(
     )
 
     # ---------- Formatting & decorations ----------
-    _format_broken_x_axes(ax1, ax2, xaxis, fontsizes)
+    _format_broken_x_axes(
+        ax1, ax2, xaxis, fontsizes, hide_minor_x_tick_labels
+    )
     _add_broken_axis_diagonals(ax1, ax2)
     _apply_grid(ax1, ax2, grid)
     _add_line_legend(ax1, ax2, label_to_color, legend, line_width)

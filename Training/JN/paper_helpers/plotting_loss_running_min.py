@@ -22,6 +22,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
+from matplotlib.ticker import NullFormatter
 
 from .prepare_model_loss import prepare_model_run_data
 
@@ -257,7 +258,9 @@ def _plot_runs_on_broken_axes(
             )
 
 
-def _format_axes(ax1, ax2, xaxis, fontsizes, ylabel, y_lim=None):
+def _format_axes(
+    ax1, ax2, xaxis, fontsizes, ylabel, y_lim=None, hide_minor_x_tick_labels=False
+):
     """Set axis scales, limits, labels, and tick fonts."""
     x_min = xaxis["min"]
     x_max = xaxis["max"]
@@ -286,6 +289,9 @@ def _format_axes(ax1, ax2, xaxis, fontsizes, ylabel, y_lim=None):
     ax1.yaxis.set_tick_params(labelsize=ytick_font)
     ax1.xaxis.set_tick_params(labelsize=xtick_font)
     ax2.xaxis.set_tick_params(labelsize=xtick_font)
+    if hide_minor_x_tick_labels:
+        for ax in (ax1, ax2):
+            ax.xaxis.set_minor_formatter(NullFormatter())
     if y_lim is not None:
         ax1.set_ylim(y_lim)
         ax2.set_ylim(y_lim)
@@ -391,6 +397,7 @@ def plot_running_min_loss_component_broken_x_log_lst(
     plot_params=None,
     plot_settings=None,
     loss_attr="val_constraint_loss_list",
+    hide_minor_x_tick_labels=False,
 ):
     """
     Plot a running-min curve for any recorded loss-component list.
@@ -459,7 +466,9 @@ def plot_running_min_loss_component_broken_x_log_lst(
         es_entries=es_entries,
         y_floor=y_floor,
     )
-    _format_axes(ax1, ax2, xaxis, fontsizes, ylabel, y_lim)
+    _format_axes(
+        ax1, ax2, xaxis, fontsizes, ylabel, y_lim, hide_minor_x_tick_labels
+    )
     _add_broken_axis_diagonals(ax1, ax2)
     _apply_grid(ax1, ax2, grid)
     _add_line_legend(ax1, ax2, label_to_color, line_width, legend)

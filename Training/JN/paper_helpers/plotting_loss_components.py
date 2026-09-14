@@ -51,6 +51,7 @@ Contents
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
+from matplotlib.ticker import NullFormatter
 from pathlib import Path
 
 
@@ -662,7 +663,9 @@ def _create_broken_x_axes(figsize):
     return fig, ax1, ax2
 
 
-def _format_axes(ax1, ax2, xaxis, fontsizes, ylabel, y_lim=None):
+def _format_axes(
+    ax1, ax2, xaxis, fontsizes, ylabel, y_lim=None, hide_minor_x_tick_labels=False
+):
     for ax in (ax1, ax2):
         ax.set_xscale("log")
         ax.set_yscale("log")
@@ -681,6 +684,9 @@ def _format_axes(ax1, ax2, xaxis, fontsizes, ylabel, y_lim=None):
     ax1.yaxis.set_tick_params(labelsize=fontsizes["ytick_labels"])
     ax1.xaxis.set_tick_params(labelsize=fontsizes["xtick_labels"])
     ax2.xaxis.set_tick_params(labelsize=fontsizes["xtick_labels"])
+    if hide_minor_x_tick_labels:
+        for ax in (ax1, ax2):
+            ax.xaxis.set_minor_formatter(NullFormatter())
     if y_lim is not None:
         ax1.set_ylim(y_lim)
         ax2.set_ylim(y_lim)
@@ -1269,6 +1275,7 @@ def plot_smoothed_loss_components_seed_broken_x_log_lst(
     include_flip_epoch_in_legend=False,
     print_best_epoch_losses=False,
     normalize_by_loss_weights=False,
+    hide_minor_x_tick_labels=False,
 ):
     """
     Plot smoothed raw loss components for one split from each model group.
@@ -1432,7 +1439,10 @@ def plot_smoothed_loss_components_seed_broken_x_log_lst(
                 group_label=None,
             )
 
-        _format_axes(ax1, ax2, cfg["xaxis"], cfg["fontsizes"], cfg["ylabel"], cfg["y_lim"])
+        _format_axes(
+            ax1, ax2, cfg["xaxis"], cfg["fontsizes"], cfg["ylabel"],
+            cfg["y_lim"], hide_minor_x_tick_labels,
+        )
         _add_broken_axis_diagonals(ax1, ax2)
         _apply_grid(ax1, ax2, cfg["grid"])
         _add_line_legend(
