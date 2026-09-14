@@ -914,6 +914,7 @@ def _plot_mean_loss_components_broken_x_log_lst(
     models_dics=None,
     legend_labels=None,
     legend_label_title=None,
+    hide_minor_x_tick_labels=False,
 ):
     """
     Plot constraint, PDE, and data loss components across experiment groups.
@@ -1050,7 +1051,10 @@ def _plot_mean_loss_components_broken_x_log_lst(
                     cfg,
                 )
 
-    _format_axes(ax1, ax2, cfg["xaxis"], cfg["fontsizes"], cfg["ylabel"], cfg["y_lim"])
+    _format_axes(
+        ax1, ax2, cfg["xaxis"], cfg["fontsizes"], cfg["ylabel"],
+        cfg["y_lim"], hide_minor_x_tick_labels,
+    )
     _add_broken_axis_diagonals(ax1, ax2)
     _apply_grid(ax1, ax2, cfg["grid"])
     _add_line_legend(
@@ -1091,12 +1095,16 @@ def plot_running_min_loss_components_broken_x_log_lst(
     models_dics=None,
     legend_labels=None,
     legend_label_title=None,
+    hide_minor_x_tick_labels=False,
 ):
     """
     Backward-compatible wrapper that plots running-min component curves.
 
     Prefer `plot_mean_loss_components_broken_x_log_lst` for the raw mean and
     min-max component trajectories.
+
+    Set `hide_minor_x_tick_labels=True` to hide minor tick labels on both
+    segments of the broken x-axis.
     """
     plot_settings = {
         "name": "running_min_loss_components_broken_xaxis_loglog.png",
@@ -1111,6 +1119,7 @@ def plot_running_min_loss_components_broken_x_log_lst(
         models_dics=models_dics,
         legend_labels=legend_labels,
         legend_label_title=legend_label_title,
+        hide_minor_x_tick_labels=hide_minor_x_tick_labels,
     )
 
 

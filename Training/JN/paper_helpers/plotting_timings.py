@@ -334,7 +334,7 @@ def plot_total_run_times_lst_colLayout(
     legend_fontsize=16,
     legend_title="ES",
     legend_ncols=1,
-    y_label="Total Run Time [s]",
+    y_label="Total learning time [s]",
     x_label=r"$N_u$",
     axis_fontsizes=None,
     y_scale="log",
