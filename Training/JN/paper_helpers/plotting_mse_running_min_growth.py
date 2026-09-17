@@ -263,7 +263,7 @@ def _format_broken_x_axes(ax1, ax2, xaxis, fontsizes):
     ax2.set_xlabel("Epoch", fontsize=xfont)
     _set_log_safe_xlim(ax1, x_min, break_x)
     _set_log_safe_xlim(ax2, break_x, x_max)
-    ax1.set_ylabel(r"Growth MSE [mm$^4$ days$^{-2}$]", fontsize=yfont)
+    ax1.set_ylabel(r"Growth MSE [days$^{-2}$]", fontsize=yfont)
 
     ax1.spines["right"].set_visible(False)
     ax2.spines["left"].set_visible(False)
