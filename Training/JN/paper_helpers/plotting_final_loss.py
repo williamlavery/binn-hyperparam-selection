@@ -54,6 +54,7 @@ def plot_final_loss_lst(
     x_label=r"$N_u$",
     axis_fontsizes=None,
     ylim=None,
+    y_scale="log",
     grid=False,
     grid_alpha=0
 ):
@@ -61,7 +62,7 @@ def plot_final_loss_lst(
     Bars use:
       - consistent fill colors across groups (same label → same color)
       - black hatch patterns per group (different texture per group)
-      - log y-axis
+      - configurable y-axis scale (log by default)
       - spacing between bars of same label
 
     Error bars span min–max across repeats (using min_best_model_loss / max_best_model_loss
@@ -210,7 +211,7 @@ def plot_final_loss_lst(
 
         # ---------- Axes ----------
         ax1.set_ylabel(y_label, fontsize=axis_fontsizes["yaxis"])
-        ax1.set_yscale("log")
+        ax1.set_yscale(y_scale)
         if ylim:
             ax1.set_ylim(ylim)
         ax1.grid(bool(grid), axis="y", which="both", linestyle="-", linewidth=0.5, alpha=grid_alpha)

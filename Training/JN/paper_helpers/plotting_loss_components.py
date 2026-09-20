@@ -151,7 +151,7 @@ DEFAULT_SETTINGS = {
         "ytick_labels": 10,
     },
     "figsize": (7, 5),
-    "ylabel": "Loss component [a.u]",
+    "ylabel": "Loss component [a.u.]",
     "y_floor": 1e-16,
     "y_lim": None,
     "running_min": False,
@@ -1108,7 +1108,7 @@ def plot_running_min_loss_components_broken_x_log_lst(
     """
     plot_settings = {
         "name": "running_min_loss_components_broken_xaxis_loglog.png",
-        "ylabel": "Running min loss component [a.u]",
+        "ylabel": "Running min loss component [a.u.]",
         **(plot_settings or {}),
         "running_min": True,
     }
@@ -1141,7 +1141,7 @@ def plot_running_min_loss_components_seed_broken_x_log_lst(
     """
     plot_settings = {
         "name": "running_min_loss_components_seed_broken_xaxis_loglog.png",
-        "ylabel": "Running min loss component [a.u]",
+        "ylabel": "Running min loss component [a.u.]",
         "fill": False,
         **(plot_settings or {}),
         "running_min": True,
@@ -1302,7 +1302,7 @@ def plot_smoothed_loss_components_seed_broken_x_log_lst(
     """
     plot_settings = {
         "name": "smoothed_loss_components_seed_broken_xaxis_loglog.png",
-        "ylabel": "Smoothed loss component [a.u]",
+        "ylabel": "Smoothed loss component [a.u.]",
         "fill": False,
         **(plot_settings or {}),
         "running_min": False,

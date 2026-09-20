@@ -413,7 +413,7 @@ def plot_running_min_loss_component_broken_x_log_lst(
     """
     plot_settings = {
         "name": f"running_min_{loss_attr}_broken_xaxis_loglog.png",
-        "ylabel": f"Running min {loss_attr.replace('_', ' ')} [a.u]",
+        "ylabel": f"Running min {loss_attr.replace('_', ' ')} [a.u.]",
         **(plot_settings or {}),
     }
 
