@@ -105,8 +105,8 @@ def BN_params_binn_builder(data_obj, data_obj_params):
         "diffusionTrueFunc": diffusion_func,
         "diffusionTrueDerivFunc": diffusion_derivative_func,
         "growthTrueFunc": growth_func,
-        "max_u_clean": data_obj.u_clean.max(),
-        "min_u_clean": data_obj.u_clean.min(),
+        "max_u_data": data_obj.u.max(),
+        "min_u_data": data_obj.u.min(),
     }
     data_obj_params["RDEq_params_store"]["u_clean"] = data_obj.u_clean
     data_obj_params["RDEq_extra_params"] = RDEq_extra_params

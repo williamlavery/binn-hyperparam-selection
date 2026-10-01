@@ -514,8 +514,8 @@ class BINN(nn.Module):
         diffusion_true_deriv_func = data_obj_params["RDEq_extra_params"]["diffusionTrueDerivFunc"]
         growth_true_func = data_obj_params["RDEq_extra_params"]["growthTrueFunc"]
 
-        u_max = data_obj_params["RDEq_extra_params"]["max_u_clean"]
-        u_min = data_obj_params["RDEq_extra_params"]["min_u_clean"]
+        u_max = data_obj_params["RDEq_extra_params"]["max_u_data"]
+        u_min = data_obj_params["RDEq_extra_params"]["min_u_data"]
 
         binn_model_params = model_params["binn_model_params"]
         binn_construction_params = binn_model_params["binn_construction_params"]
