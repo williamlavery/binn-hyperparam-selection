@@ -20,3 +20,6 @@ env/
 
 # Logs
 *.log
+
+# Spreadsheet-inspection sidecars (derived from the .xlsx inventories)
+*.inspect.ndjson
