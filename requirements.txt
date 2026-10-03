@@ -1,0 +1,12 @@
+# Python 3.11 (see environment.yml for the conda equivalent)
+# CPU-only torch on Linux: pip install -r requirements.txt \
+#   --extra-index-url https://download.pytorch.org/whl/cpu
+numpy
+scipy
+pandas
+matplotlib
+sympy
+torch
+ipython
+jupyterlab
+notebook
