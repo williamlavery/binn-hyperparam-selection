@@ -273,6 +273,8 @@ def load_requested_models(
             map_location=device,
             weights_only=False,
         )
+        if hasattr(binn_loaded, "rebind_paths"):
+            binn_loaded.rebind_paths(file_path)  # <-- avoid loading of stale paths
         if hasattr(binn_loaded, "load_best_val"):
             binn_loaded.load_best_val(device=device)
 

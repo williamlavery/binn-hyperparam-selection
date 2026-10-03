@@ -1086,6 +1086,14 @@ class ModelWrapper:
             return
         torch.save(self._checkpoint(), save_name + ".pth")
 
+    def rebind_paths(self, checkpoint_path):  # <-- avoid loading of stale paths
+        directory = os.path.dirname(os.path.abspath(checkpoint_path))
+        self.model_save_dir = directory
+        self.save_name = os.path.join(
+            directory, f"Weights_binn_num{self.binnModelLabel}", "test"
+        )
+        return self
+
     def load_best_val(self, device=None):
         if self.save_name:
             best_path = f"{self.save_name}_best_val.pth"
